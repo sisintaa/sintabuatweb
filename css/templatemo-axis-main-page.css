@@ -79,7 +79,7 @@ https://templatemo.com/tm-619-axis-industrial
 .stack__card:nth-child(4) { top: 140px; background: var(--ink); color: var(--base); box-shadow: var(--shadow-safety); }
 
 .stack__card:hover { transform: translate(-4px, -4px); box-shadow: 12px 12px 0px var(--ink); }
-.stack__card:nth-child(3):hover { box-shadow: 12px 12px 0px var(--safety); }
+.stack__card:nth-child(4):hover { box-shadow: 12px 12px 0px var(--safety); }
 
 .stack__card-left  { grid-column: span 4; }
 .stack__card-right { grid-column: span 8; }
