@@ -179,9 +179,9 @@ https://templatemo.com/tm-619-axis-industrial
 .spec-cell--safety .bar-track { background: rgba(255,255,255,0.2); }
 .spec-cell--safety .bar-track__fill { background: var(--base); }
 
-/* About paragraph */
+/* About / Template Info */
 .about {
-    padding: clamp(2.5rem, 5vw, 4rem) clamp(1rem, 4vw, 4rem);
+    padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 4rem);
     border-bottom: var(--border);
     background: var(--surface);
 }
@@ -190,22 +190,20 @@ https://templatemo.com/tm-619-axis-industrial
 .about__text { font-size: var(--fs-data); line-height: 2; opacity: 0.6; margin-bottom: 1.5rem; }
 .about__links { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
 
-/* Responsive */
 @media (max-width: 1024px) {
-    .spec-grid { grid-template-columns: repeat(2, 1fr); }
-    .spec-cell:nth-child(4n) { border-right: var(--border); }
-    .spec-cell:nth-child(2n) { border-right: none; }
-    .spec-cell:nth-last-child(-n+4) { border-bottom: var(--border); }
-    .spec-cell:nth-last-child(-n+2) { border-bottom: none; }
-    .details__left { grid-column: span 12; }
-    .details__right { grid-column: span 12; }
+    .bento-card--wide,
+    .bento-card--mid,
+    .bento-card--narrow { grid-column: span 6; }
+    .stack__card-left  { grid-column: span 3; }
+    .stack__card-right { grid-column: span 9; }
 }
 
 @media (max-width: 768px) {
-    .spec-grid { grid-template-columns: 1fr; }
-    .spec-cell, .spec-cell:nth-child(4n), .spec-cell:nth-child(2n) { border-right: none; border-bottom: var(--border); }
-    .spec-cell:last-child { border-bottom: none; }
-    .details__right { grid-template-columns: 1fr; }
-    .hero__actions { flex-direction: column; width: 100%; }
-    .btn { width: 100%; }
+    .bento-card--wide,
+    .bento-card--mid,
+    .bento-card--narrow { grid-column: 1 / -1; }
+    .bento-card--tall { grid-row: span 1; }
+    .stack__card { grid-template-columns: 1fr; position: relative; top: auto !important; }
+    .stack__card-left, .stack__card-right { grid-column: 1 / -1; }
+    .stack__card-step { font-size: 4rem; }
 }
