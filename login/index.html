@@ -16,36 +16,28 @@
       <div class="login">
          <img src="assets/img/login-bg.png" alt="image" class="login__bg">
 
-         <form action="" class="login__form">
-            <h1 class="login__title">Login</h1>
+         <form id="loginForm" action="" class="login__form">
+            <h1 class="login__title">Silahkan Masuk</h1>
 
             <div class="login__inputs">
                <div class="login__box">
-                  <input type="email" placeholder="Email ID" required class="login__input">
+                  <input type="text" id="username" placeholder="Nama Pengguna" required class="required">
                   <i class="ri-mail-fill"></i>
                </div>
 
                <div class="login__box">
-                  <input type="password" placeholder="Password" required class="login__input">
+                  <input type="password" id="password" placeholder="Kata Sandi" required class="required">
                   <i class="ri-lock-2-fill"></i>
                </div>
             </div>
 
-            <div class="login__check">
-               <div class="login__check-box">
-                  <input type="checkbox" class="login__check-input" id="user-check">
-                  <label for="user-check" class="login__check-label">Remember me</label>
-               </div>
-
-               <a href="#" class="login__forgot">Forgot Password?</a>
-            </div>
-
-            <button type="submit" class="login__button">Login</button>
+            <button type="submit" class="login__button">Masuk</button>
 
             <div class="login__register">
-               Don't have an account? <a href="#">Register</a>
+               Belum Punya Akun? <a href="#">Register</a>
             </div>
          </form>
       </div>
+      <script src="js/login.js"></script>
    </body>
 </html>
